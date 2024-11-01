@@ -18,5 +18,4 @@ function Myfunc()
         </div>
     )
 }
-
 export default Myfunc;
