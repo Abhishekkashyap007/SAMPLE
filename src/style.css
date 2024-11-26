@@ -3,3 +3,17 @@
     background-color:aquamarine !important;
 
 }
+
+.mainpage
+{
+    border:1px solid red;
+    min-height:80vh;
+    max-height: fit-content;
+    margin-top: 60px;
+}
+.apps .card
+{
+    width:200px;
+    height:200px;
+
+}

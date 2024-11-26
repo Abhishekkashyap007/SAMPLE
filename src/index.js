@@ -6,6 +6,8 @@ import "./style.css";
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import Loginpage from './modules/auth/Loginpage';
 import Userregistor from './modules/auth/Userregistor';
+import Mylandingpage from './modules/dashboard/Mylandingpage';
+import Paymentlanding from './modules/payments/Paymentlanding';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,6 +17,10 @@ root.render(
     <Routes>
       <Route path='' element={<Loginpage/>}></Route>
       <Route path='registor' element={<Userregistor/>}></Route>
+      <Route path='landing' element={<Mylandingpage/>}>
+      
+      </Route>
+      <Route path='landing/payment' element={<Paymentlanding/>}></Route>
 
 
     </Routes>

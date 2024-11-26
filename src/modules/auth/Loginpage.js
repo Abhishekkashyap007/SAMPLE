@@ -12,22 +12,23 @@ function Loginpage() {
                                 <p style={{textShadow:'2px 2px 5px black',fontSize:`${fst}px`}}>Welcome to Login Page</p>
                             </div>
                             <div className='col-12'>
-                                <div class="mb-3">
-                                    <label  class="form-label">Email address</label>
-                                    <input type="email" class="form-control"/>
+                                <div className="mb-3">
+                                    <label  className="form-label">Email address</label>
+                                    <input type="email" className="form-control"/>
                                 </div>
                             </div>
                             <div className='col-12'>
-                                <div class="mb-3">
-                                    <label  class="form-label">Password</label>
-                                    <input type="Password" class="form-control"/>
+                                <div className="mb-3">
+                                    <label  className="form-label">Password</label>
+                                    <input type="Password" className="form-control"/>
                                 </div>
                             </div>
                             <div className='col-12 text-center'>
-                                <div class="mb-3">
+                                <div className="mb-3">
                                     
                                     <button className='btn btn-success shadow'>Login</button>
                                     <Link className='btn btn-outline-warning shadow ms-3' to='registor'>Registor</Link>
+                                    <Link className='btn btn-outline-warning shadow ms-3' to='landing'>landing</Link>
                                 </div>
                             </div>
                         </div>
