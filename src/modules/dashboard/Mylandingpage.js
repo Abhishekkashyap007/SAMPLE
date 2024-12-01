@@ -5,7 +5,7 @@ import { FaRupeeSign } from "react-icons/fa";
 
 function Mylandingpage() {
     return (
-        <div classname='container mt-3 apps'>
+        <div className='container mt-3 apps'>
             <div className='row justify-content-center'>
                 <div className='col-md-12 p-5 bg-info rounded shadow'>
                     <div className='container-fluid'>
@@ -24,11 +24,11 @@ function Mylandingpage() {
                                 </Link>
                             </div>
                             <div className='col-md-3 mt-5 text-center'>
-                                <Link to="payment">
+                                <Link to="course">
                                 <div className="card shadow p-3 rounded rounded-circle">
                                     <p className='h1 text-center'><FaRupeeSign/></p>
                                         <div className="card-body">
-                                            <h5 className="card-title">Payment</h5>
+                                            <h5 className="card-title">Courses</h5>
                                         </div>
                                 </div>
                                 </Link>
@@ -38,7 +38,7 @@ function Mylandingpage() {
                                 <div className="card shadow p-3 rounded rounded-circle">
                                     <p className='h1 text-center'><FaRupeeSign/></p>
                                         <div className="card-body">
-                                            <h5 className="card-title">Payment</h5>
+                                            <h5 className="card-title">Student Management</h5>
                                         </div>
                                 </div>
                                 </Link>
@@ -48,7 +48,7 @@ function Mylandingpage() {
                                 <div className="card shadow p-3 rounded rounded-circle">
                                     <p className='h1 text-center'><FaRupeeSign/></p>
                                         <div className="card-body">
-                                            <h5 className="card-title">Payment</h5>
+                                            <h5 className="card-title">Classes</h5>
                                         </div>
                                 </div>
                                 </Link>
@@ -58,7 +58,7 @@ function Mylandingpage() {
                                 <div className="card shadow p-3 rounded rounded-circle">
                                     <p className='h1 text-center'><FaRupeeSign/></p>
                                         <div className="card-body">
-                                            <h5 className="card-title">Payment</h5>
+                                            <h5 className="card-title">Fees</h5>
                                         </div>
                                 </div>
                                 </Link>
@@ -68,7 +68,7 @@ function Mylandingpage() {
                                 <div className="card shadow p-3 rounded rounded-circle">
                                     <p className='h1 text-center'><FaRupeeSign/></p>
                                         <div className="card-body">
-                                            <h5 className="card-title">Payment</h5>
+                                            <h5 className="card-title">Teacher Management</h5>
                                         </div>
                                 </div>
                                 </Link>

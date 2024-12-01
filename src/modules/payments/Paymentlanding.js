@@ -1,17 +1,16 @@
 import React, { Fragment } from 'react'
 import Headerpage from '../shares/Headerpage'
 import Footerpage from '../shares/Footerpage'
+import { Outlet } from 'react-router-dom';
 
-function Paymentlanding(){
-    return(
-    <Fragment>
-        <Headerpage/>
-        <div className='mainpage'>
-            
-        </div>
-        <Footerpage/>
-    </Fragment>
+function Paymentlanding() {
+    return (
+        <Fragment>
+            <Headerpage />
+            <Outlet/>
+            <Footerpage />
+        </Fragment>
     )
 }
 
-export default Paymentlanding
+export default Paymentlanding;

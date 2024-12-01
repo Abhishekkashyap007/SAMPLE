@@ -15,5 +15,13 @@
 {
     width:200px;
     height:200px;
-
+}
+.apps .card:hover
+{
+    transform:scale(1.1,1.1);
+    transition-duration:300ms;
+}
+.apps a
+{
+    text-decoration: none;
 }

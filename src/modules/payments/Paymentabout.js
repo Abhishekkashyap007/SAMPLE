@@ -1,13 +1,12 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 
-function Payhomepage() {
-    return (
+function Paymentabout(){
+    return(
         <div className='mainpage'>
-            Payhomepage
-
+            Paymentabout
         </div>
     )
 }
 
-export default Payhomepage
+export default Paymentabout
