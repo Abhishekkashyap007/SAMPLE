@@ -1,11 +1,19 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import React, { Fragment } from 'react'
+import Noidabranch from './Noidabranch'
+import Delhibranch from './Delhibranch'
 
 function Paymentabout(){
+    var amount = 600;
+    var syl="Mern Full stack";
     return(
+        <Fragment>
         <div className='mainpage'>
-            Paymentabout
+            Paymentabout{amount}
+            <Noidabranch  ></Noidabranch>
+            <Delhibranch price={amount} amt="" name={syl}></Delhibranch>
         </div>
+        
+        </Fragment>
     )
 }
 
