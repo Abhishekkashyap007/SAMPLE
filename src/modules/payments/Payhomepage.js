@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { useState } from 'react'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 function Payhomepage() {
 
@@ -15,7 +16,7 @@ function Payhomepage() {
     // }
 
     const myapi = () => {
-        fetch('https://jsonplaceholder.typicode.com/posts').then((d) => {
+        fetch('https://fakestoreapi.com/products').then((d) => {
             return d.json();
         }).then((myd) => {
             console.log(myd);
@@ -39,15 +40,17 @@ function Payhomepage() {
                                     <div className="card-body">
                                         <h5 className="card-title">{m.id}</h5>
                                         <h5>{m.title}</h5>
+                                        <img src={m.image} alt='sdfg' className='img-fluid'/>
                                         <p className="card-text">{m.body}</p>
-                                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                                        <Link to={"detailspage/"+m.id} className="btn btn-primary">Details</Link>
                                     </div>
                                 </div> : <div className="card bg-info">
                                     <div className="card-body">
                                         <h5 className="card-title">{m.id}</h5>
                                         <h5>{m.title}</h5>
+                                        <img src={m.image} alt='sdfg' className='img-fluid'/>
                                         <p className="card-text">{m.body}</p>
-                                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                                        <Link to={"detailspage/"+m.id} className="btn btn-primary">Details</Link>
                                     </div>
                                 </div>}
 

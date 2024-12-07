@@ -15,10 +15,13 @@ function Headerpage() {
                             <Link className="nav-link active" aria-current="page" to="">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="about">About</Link>
+                            <Link className="nav-link" to="about">Props</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="payment-details">Payment Details</Link>
+                            <Link className="nav-link" to="payment-details">Lazyloading</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="paygraph">Graph</Link>
                         </li>
                        {/* <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

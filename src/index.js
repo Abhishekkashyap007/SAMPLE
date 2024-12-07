@@ -16,6 +16,8 @@ import Paymentabout from './modules/payments/Paymentabout';
 import Payhomepage from './modules/payments/Payhomepage';
 import Courselandingpage from './modules/courses/Courselandingpage';
 import Coursehomepage from './modules/courses/Coursehomepage';
+import Productdetails from './modules/payments/Productdetails';
+import Paymentgraph from './modules/payments/Paymentgraph';
 const PaymentDetails=lazy(()=>import('./modules/payments/Paymentdetails'));
 
 
@@ -32,6 +34,8 @@ root.render(
         <Route path='landing/payment' element={<Paymentlanding />}>
           <Route path='' element={<Payhomepage />} />
           <Route path='about' element={<Paymentabout />} />
+          <Route path='paygraph' element={<Paymentgraph/>}/>
+          <Route path='detailspage/:id' element={<Productdetails/>}/>
           <Route path='payment-details' element={<Suspense fallback={<h1 className='mylader'>Loading....</h1>}>
             <PaymentDetails/>
           </Suspense>} />
