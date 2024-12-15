@@ -18,6 +18,10 @@ import Courselandingpage from './modules/courses/Courselandingpage';
 import Coursehomepage from './modules/courses/Coursehomepage';
 import Productdetails from './modules/payments/Productdetails';
 import Paymentgraph from './modules/payments/Paymentgraph';
+import Paymentdashboard from './modules/payments/Paymentdashboard';
+import { Provider } from 'react-redux';
+import { mystore } from './modules/redux/Mystoredata';
+
 const PaymentDetails=lazy(()=>import('./modules/payments/Paymentdetails'));
 
 
@@ -26,6 +30,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <Provider store={mystore}>
       <Routes>
         <Route path='' element={<Loginpage />}></Route>
         <Route path='registor' element={<Userregistor />} />
@@ -35,6 +40,7 @@ root.render(
           <Route path='' element={<Payhomepage />} />
           <Route path='about' element={<Paymentabout />} />
           <Route path='paygraph' element={<Paymentgraph/>}/>
+          <Route path='paymentdashboard' element={<Paymentdashboard/>}/>
           <Route path='detailspage/:id' element={<Productdetails/>}/>
           <Route path='payment-details' element={<Suspense fallback={<h1 className='mylader'>Loading....</h1>}>
             <PaymentDetails/>
@@ -46,6 +52,7 @@ root.render(
 
         </Route>
         </Routes> 
+        </Provider>
 
     </BrowserRouter>
 

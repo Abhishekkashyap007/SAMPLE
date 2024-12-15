@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Headerpage() {
     return (
-        <nav className="navbar navbar-expand-lg bg-info fixed-top">
+        <nav className="navbar navbar-expand-lg bg-info shodow">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">Navbar</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,6 +22,9 @@ function Headerpage() {
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="paygraph">Graph</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="paymentdashboard">Dashboard</Link>
                         </li>
                        {/* <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
